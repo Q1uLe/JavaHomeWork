@@ -1,4 +1,4 @@
-package ru.mirea.prac2;
+package ru.mirea.prac2.Ball;
 
 public class Ball {
     private double x;
