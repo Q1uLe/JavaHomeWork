@@ -14,5 +14,8 @@ public class TestBall {
         System.out.println("Ball moved to: (" + testBall.getX() + ", " + testBall.getY() + ")");
 
         System.out.println(testBall);
+
+        testBall = new Ball();
+        System.out.println(testBall);
     }
 }

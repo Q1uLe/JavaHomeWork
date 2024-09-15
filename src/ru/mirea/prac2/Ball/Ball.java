@@ -9,6 +9,11 @@ public class Ball {
         this.y = y;
     }
 
+    public Ball(){
+        this.x = 0;
+        this.y = 0;
+    }
+
     public double getX() {
         return x;
     }
