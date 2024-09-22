@@ -1,4 +1,4 @@
-package ru.mirea.prac2.Point;
+package ru.mirea.prac2.Task3;
 
 public class Circle {
     Point center;
