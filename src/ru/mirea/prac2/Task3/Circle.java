@@ -11,6 +11,12 @@ public class Circle {
         this.color = color;
     }
 
+    public Circle(){
+        this.center = new Point();
+        this.radius = 1.;
+        this.color = "Black";
+    }
+
     public double getRadius() {
         return radius;
     }
