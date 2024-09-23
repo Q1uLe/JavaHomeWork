@@ -1,6 +1,7 @@
 package ru.mirea.prac3.Task1;
 import java.util.Random;
 import java.util.ArrayList;
+import java.util.Collections;
 
 /*
 Создать массив вещественных чисел случайным образом, вывести его
@@ -22,7 +23,11 @@ public class Main {
         for(int i = 0; i < numCount2; i++){
             secondList.add((int)(Math.random() * 1000) + 1);
         }
-        System.out.println(firstList);
-        System.out.println(secondList);
+        System.out.println("Unsorted 'Random' list: " + firstList);
+        System.out.println("Unsorted 'Math.random()' list: " + secondList);
+        Collections.sort(firstList);
+        Collections.sort(secondList);
+        System.out.println("Unsorted 'Random' list: " + firstList);
+        System.out.println("Unsorted 'Math.random()' list: " + secondList);
     }
 }
