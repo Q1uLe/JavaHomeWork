@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Unsorted 'Math.random()' list: " + secondList);
         Collections.sort(firstList);
         Collections.sort(secondList);
-        System.out.println("Unsorted 'Random' list: " + firstList);
-        System.out.println("Unsorted 'Math.random()' list: " + secondList);
+        System.out.println("Sorted 'Random' list: " + firstList);
+        System.out.println("Sorted 'Math.random()' list: " + secondList);
     }
 }

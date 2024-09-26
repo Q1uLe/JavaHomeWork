@@ -1,4 +1,4 @@
-package ru.mirea.lab1;
+package ru.mirea.prac1;
 
 public class prac5 {
     public static int factorial(int x){

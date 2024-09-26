@@ -1,4 +1,4 @@
-package ru.mirea.lab1;
+package ru.mirea.prac1;
 import java.util.Scanner;
 
 public class prac2 {
