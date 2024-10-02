@@ -10,7 +10,7 @@ public class Tester {
         ArrayList<Circle> circles1 = new ArrayList<>();
         for(int i = 0; i < 10; i++){
 //            circles[i] = new Circle(new Point(i, -i), Math.pow((i + 1), 2), "Red");
-            circles1.add(i, new Circle(new Point(i, -i), Math.pow((i + 1), 2), "Red"));
+            circles1.add(i, new Circle(new ThirdPoint(i, -i), Math.pow((i + 1), 2), "Red"));
             circleCount++;
         }
 //        System.out.println(circles[0]);

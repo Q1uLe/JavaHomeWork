@@ -1,20 +1,19 @@
 package ru.mirea.prac3.Task2;
 
-import ru.mirea.prac2.Task3.Point;
 
-public class Circle {
-    Point center;
+public class ThirdCircle {
+    ThirdPoint center;
     double radius;
     String color;
 
-    public Circle(Point center, double radius, String color) {
+    public ThirdCircle(ThirdPoint center, double radius, String color) {
         this.center = center;
         this.radius = radius;
         this.color = color;
     }
 
-    public Circle(){
-        this.center = new Point();
+    public ThirdCircle(){
+        this.center = new ThirdPoint();
         this.radius = 1.;
         this.color = "Black";
     }
@@ -27,11 +26,11 @@ public class Circle {
         this.radius = radius;
     }
 
-    public Point getCenter() {
+    public ThirdPoint getCenter() {
         return center;
     }
 
-    public void setCenter(Point center) {
+    public void setCenter(ThirdPoint center) {
         this.center = center;
     }
 
