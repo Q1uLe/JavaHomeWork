@@ -1,6 +1,6 @@
 package ru.mirea.prac1;
 
-public class prac5 {
+public class Prac5 {
     public static int factorial(int x){
         if (x < 0){
             System.out.println("Факториал для отрицательных чисел не определён");

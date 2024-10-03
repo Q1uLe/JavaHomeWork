@@ -1,6 +1,6 @@
 package ru.mirea.prac1;
 
-public class prac3{
+public class Prac3 {
     public static void main(String[] args){
         if (args.length == 0){
             System.out.println("Нечего выводить");

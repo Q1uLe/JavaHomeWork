@@ -1,6 +1,6 @@
 package ru.mirea.prac1;
 
-public class prac4 {
+public class Prac4 {
     public static void main(String[] args){
         int i = 1;
         float out = 0;

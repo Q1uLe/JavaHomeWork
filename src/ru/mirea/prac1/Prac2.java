@@ -1,7 +1,7 @@
 package ru.mirea.prac1;
 import java.util.Scanner;
 
-public class prac2 {
+public class Prac2 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int num_count = 0;
