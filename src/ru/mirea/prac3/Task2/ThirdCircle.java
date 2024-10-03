@@ -48,6 +48,6 @@ public class ThirdCircle {
                 "center=" + center +
                 ", radius=" + radius +
                 ", color='" + color + '\'' +
-                '}';
+                "}\n";
     }
 }
