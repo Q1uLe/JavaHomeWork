@@ -1,4 +1,5 @@
 package ru.mirea.prac3.Task1;
+import java.util.Comparator;
 import java.util.Random;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,8 +26,10 @@ public class Main {
         }
         System.out.println("Unsorted 'Random' list: " + firstList);
         System.out.println("Unsorted 'Math.random()' list: " + secondList);
-        Collections.sort(firstList);
-        Collections.sort(secondList);
+//        Collections.sort(firstList);
+        firstList.sort(Comparator.naturalOrder());
+//        Collections.sort(secondList);
+        secondList.sort(Comparator.naturalOrder());
         System.out.println("Sorted 'Random' list: " + firstList);
         System.out.println("Sorted 'Math.random()' list: " + secondList);
     }
