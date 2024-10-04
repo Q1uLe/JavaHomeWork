@@ -17,6 +17,7 @@ public class Prac1 {
                 sc.next();
             }
         }
+        sc.close();
         for (i = 0; i < 10; i++) {
             System.out.println(nums[i]);
         }

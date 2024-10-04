@@ -38,6 +38,7 @@ public class Prac2 {
                 sc.next();
             }
         }
+        sc.close();
         System.out.println("Max is: " + max + "\n" + "Min is:" + min);
     }
 }
