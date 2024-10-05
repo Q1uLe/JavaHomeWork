@@ -81,10 +81,11 @@ public class Task1 {
         Seasons summer = Seasons.SUMMER;
 //        System.out.println(summer);
         seasonGreeting(Seasons.SUMMER);
+        System.out.println("----------");
         for (Seasons season: Seasons.values()){
             System.out.println(season);
             System.out.println(season.getDescription());
-
+            System.out.println("----------");
         }
     }
 }
