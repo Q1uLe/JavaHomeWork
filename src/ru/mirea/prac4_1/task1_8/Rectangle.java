@@ -1,13 +1,34 @@
-package ru.mirea.prac4_1.task1;
+package ru.mirea.prac4_1.task1_8;
 
 public class Rectangle extends Shape{
-    private double height;
+    private double lenght;
     private double width;
+    private Point topLeft = new Point();
 
+    public Rectangle() {
+        super();
+        lenght = 2;
+        width = 1;
+    }
 
-    public Rectangle(double height, double width){
-        this.height = height;
+    public Rectangle(double width, double lenght) {
+        super();
+        this.lenght = lenght;
         this.width = width;
+    }
+
+    public Rectangle(double width, double lenght, String color, boolean filled) {
+        super(color, filled);
+        this.lenght = lenght;
+        this.width = width;
+    }
+
+    public Point getTopLeft() {
+        return topLeft;
+    }
+
+    public void setTopLeft(Point topLeft) {
+        this.topLeft = topLeft;
     }
 
     @Override
@@ -17,16 +38,23 @@ public class Rectangle extends Shape{
 
     @Override
     public double getArea() {
-        return height * width;
+        return lenght * width;
     }
 
     @Override
     public String toString() {
-        return "";
+        return getType() +
+                "\n\tTop left: " + topLeft +
+                "\n\tColor: " + getColor() +
+                "\n\tIs filled: " + isFilled() +
+                "\n\tWidth: " + width +
+                "\n\tLenght: " + lenght +
+                "\n\tPerimeter: " + getPerimeter() +
+                "\n\tArea: " + getArea();
     }
 
     @Override
     public double getPerimeter() {
-        return (height + width) * 2;
+        return (lenght + width) * 2;
     }
 }

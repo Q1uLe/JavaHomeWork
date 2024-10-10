@@ -4,5 +4,7 @@ public class Tester {
     public static void main(String[] args) {
         Circle circle = new Circle();
         System.out.println(circle);
+        Rectangle rect = new Rectangle(3, 4);
+        System.out.println(rect);
     }
 }
