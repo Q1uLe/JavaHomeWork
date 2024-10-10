@@ -31,6 +31,22 @@ public class Rectangle extends Shape{
         this.topLeft = topLeft;
     }
 
+    public double getLenght() {
+        return lenght;
+    }
+
+    public void setLenght(double lenght) {
+        this.lenght = lenght;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
     @Override
     public String getType() {
         return "Rectangle";
