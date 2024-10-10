@@ -1,8 +1,9 @@
-package ru.mirea.prac4_1.task1;
+package ru.mirea.prac4_1.task1_8;
 
 public abstract class Shape {
-    private String color;
-    private boolean filled;
+    protected String color;
+    protected boolean filled;
+
     public Shape() {
         this.color = "Black";
         this.filled = false;

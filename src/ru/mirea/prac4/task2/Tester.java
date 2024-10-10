@@ -12,6 +12,7 @@ public class Tester {
         clothes.add(new Tie(Sizes.L, 500, "Red"));
         clothes.add(new TShirt(Sizes.XXS, 4900, "White"));
         Atelier atelier = new Atelier();
+        System.out.println("-------");
         System.out.println("Atelier dresses man");
         atelier.dressMan(clothes);
         System.out.println("-------");

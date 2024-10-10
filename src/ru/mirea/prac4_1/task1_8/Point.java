@@ -1,4 +1,4 @@
-package ru.mirea.prac4_1.task1;
+package ru.mirea.prac4_1.task1_8;
 
 public class Point {
     double x;
@@ -37,7 +37,7 @@ public class Point {
 
     @Override
     public String toString() {
-        return "Point{" +
+        return "Point {" +
                 "x=" + x +
                 ", y=" + y +
                 '}';

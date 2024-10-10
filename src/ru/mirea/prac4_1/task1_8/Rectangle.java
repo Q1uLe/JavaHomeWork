@@ -1,9 +1,9 @@
 package ru.mirea.prac4_1.task1_8;
 
 public class Rectangle extends Shape{
-    private double lenght;
-    private double width;
-    private Point topLeft = new Point();
+    protected double lenght;
+    protected double width;
+    protected Point topLeft = new Point();
 
     public Rectangle() {
         super();

@@ -1,8 +1,8 @@
 package ru.mirea.prac4_1.task1_8;
 
 public class Circle extends Shape{
-    private Point center;
-    private double radius;
+    protected Point center;
+    protected double radius;
 
 
     public Circle() {
