@@ -6,7 +6,7 @@ public class Tester {
     public static void main(String[] args) {
         SortingStudentsByGPA sorter = new SortingStudentsByGPA();
         ArrayList<Student> students = new ArrayList<>();
-        students.add(new Student(23, "Vasya", 12));
+        students.add(new Student(25, "Vasya", 12));
         students.add(new Student(1223, "Lena", 100));
         students.add(new Student(23, "Anna", 16));
         students.add(new Student(22, "Zhenya", 25));
