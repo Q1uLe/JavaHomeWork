@@ -1,9 +1,28 @@
 package ru.mirea.prac7.task4;
 
+import java.util.Scanner;
+
 public class Tester {
     public static void main(String[] args) {
         MathFunc mc = new MathFunc();
-        Complex z = new Complex(1, 0);
+        Scanner sc = new Scanner(System.in);
+        float a = 0, b = 0;
+        System.out.println("Введите комлексное число z: вида a+bi, поочередно введите a и b");
+        int flag = 0;
+        while (flag!=2) {
+            if(sc.hasNextFloat() && flag==0){
+                a = sc.nextFloat();
+                flag++;
+            } else if (sc.hasNextFloat() && flag==1) {
+                b = sc.nextFloat();
+                flag++;
+            } else {
+                System.out.println("Вы ввели неверное число");
+                System.out.println(flag);
+                sc.next();
+            }
+        }
+        Complex z = new Complex(a, b);
         System.out.println(z);
 
         z = mc.pow(z, 2);

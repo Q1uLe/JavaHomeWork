@@ -93,6 +93,26 @@ public class Main implements Comparator<Student> {
         return new  ArrayList<Student>();
     }
 
+    public static void gnomeSort(ArrayList<Student> arr){
+        int i = 1;
+        int j = 2;
+        while (i < arr.toArray().length){
+            if (arr.get(i - 1).compareTo(arr.get(i)) < 0){
+                i = j;
+                j++;
+            } else {
+                Student temp = arr.get(i);
+                arr.set(i, arr.get(i - 1));
+                arr.set(i - 1, temp);
+                i--;
+                if (i == 0){
+                    i = j;
+                    j++;
+                }
+            }
+        }
+    }
+
     @Override
     public int compare(Student o1, Student o2) {
         return o1.compareTo(o2);
