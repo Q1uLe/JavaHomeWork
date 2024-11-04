@@ -34,8 +34,6 @@ public class OrderedWords {
                     words.add(word.trim());
                 }
             }
-            Collections.shuffle(words);
-            System.out.println(words);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
