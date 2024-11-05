@@ -1,4 +1,4 @@
-package ru.mirea.prac10.task1;
+package ru.mirea.prac10.task1_3;
 
 import java.util.ArrayList;
 import java.util.Comparator;

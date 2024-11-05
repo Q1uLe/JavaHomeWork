@@ -1,9 +1,8 @@
-package ru.mirea.prac10.task1;
+package ru.mirea.prac10.task1_3;
 
 import java.util.ArrayList;
 
-import static ru.mirea.prac10.task1.Main.gnomeSort;
-import static ru.mirea.prac10.task1.Main.quicksort;
+import static ru.mirea.prac10.task1_3.Main.gnomeSort;
 
 public class Unifier {
     public static ArrayList<Student> unifyAndSort(ArrayList<Student> students1, ArrayList<Student> students2){

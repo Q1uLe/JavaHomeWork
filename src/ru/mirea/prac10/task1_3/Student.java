@@ -1,4 +1,4 @@
-package ru.mirea.prac10.task1;
+package ru.mirea.prac10.task1_3;
 
 public class Student implements Comparable<Student>{
     private String name;

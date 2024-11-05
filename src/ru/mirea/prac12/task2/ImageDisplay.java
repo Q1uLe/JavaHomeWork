@@ -44,7 +44,6 @@ public class ImageDisplay extends JFrame {
         try {
             chooseFile();
             updatePicture();
-//            setVisible(true);
             repaint();
         } catch (IOException e){
             System.out.println("Ошибка при загрузке изображения: " + e.getMessage());
