@@ -8,13 +8,29 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int year, month, date, hour, minute;
-        System.out.println("Введите дату в формате: ГГГГ:ММ:ДД");
+        System.out.println("Введите дату в формате: ГГГГ ММ ДД");
         year = sc.nextInt();
         month = sc.nextInt();
         date = sc.nextInt();
-        System.out.println("Введите время в формате: ЧЧ:ММ");
+        while (year <=0 ||
+                month >= 12 || month <= 0 ||
+                date <= 0 || date > 31){
+            System.out.println("Неправильный формат данных");
+            System.out.println("Введите дату в формате: ГГГГ ММ ДД");
+            year = sc.nextInt();
+            month = sc.nextInt();
+            date = sc.nextInt();
+        }
+        System.out.println("Введите время в формате: ЧЧ ММ");
         hour = sc.nextInt();
         minute = sc.nextInt();
+        while (0 > hour || hour > 23 ||
+                0 > minute || minute > 59){
+            System.out.println("Неправильный формат данных");
+            System.out.println("Введите время в формате: ЧЧ ММ");
+            hour = sc.nextInt();
+            minute = sc.nextInt();
+        }
 
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.YEAR, year);

@@ -5,9 +5,9 @@ import java.awt.*;
 import java.util.Objects;
 
 public class Calculator {
-    static private TextField tf1 = new TextField();
-    static private TextField tf2 = new TextField();
-    static private TextField rf = new TextField();
+    static private JTextField tf1 = new JTextField();
+    static private JTextField tf2 = new JTextField();
+    static private JTextField rf = new JTextField();
     public static void main(String[] args) {
         JFrame f=new JFrame("ActionListener Example");
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -19,9 +19,15 @@ public class Calculator {
         cb.addItem(Operators.MULTIPLY);
 
         tf1.setBounds(50,50, 250,20);
+
         cb.setBounds(50, 100, 250, 20);
         tf2.setBounds(50,150, 250,20);
-        rf.setBounds(50, 200, 200, 20);
+        rf.setBounds(50, 200, 250, 20);
+
+        rf.setEditable(false);
+
+        tf1.setDocument(new JTextFieldLimit(15));
+        tf2.setDocument(new JTextFieldLimit(15));
 
 
         Button b=new Button("Click Here");
@@ -45,31 +51,40 @@ public class Calculator {
         switch (selectedOp){
             case PLUS -> {
                 if (isNumeric(op1) && isNumeric(op2)){
-                     rf.setText(String.valueOf(Double.parseDouble(op1) + Double.parseDouble(op2)));
+                    double ans = Double.parseDouble(op1) + Double.parseDouble(op2);
+                    rf.setText(String.format("%f", ans));
+                    System.out.println(ans);
                 } else rf.setText("WRONG NUMBER FORMAT");
             }
             case MINUS -> {
                 if (isNumeric(op1) && isNumeric(op2)){
-                    rf.setText(String.valueOf(Double.parseDouble(op1) - Double.parseDouble(op2)));
+                    double ans = Double.parseDouble(op1) - Double.parseDouble(op2);
+                    rf.setText(String.format("%f", ans));
+                    System.out.println(ans);
                 } else rf.setText("WRONG NUMBER FORMAT");
             }
             case DIVIDE -> {
                 if (isNumeric(op1) && isNumeric(op2)){
                     if (Double.parseDouble(op2) != 0){
-                        rf.setText(String.valueOf(Double.parseDouble(op1) / Double.parseDouble(op2)));
+                        double ans = Double.parseDouble(op1) / Double.parseDouble(op2);
+                        rf.setText(String.format("%f", ans));
+                        System.out.println(ans);
                     }
                     else rf.setText("DIVISION BY ZERO");
                 } else rf.setText("WRONG NUMBER FORMAT");
             }
             case MULTIPLY -> {
                 if (isNumeric(op1) && isNumeric(op2)){
-                    rf.setText(String.valueOf(Double.parseDouble(op1) * Double.parseDouble(op2)));
+                    double ans = Double.parseDouble(op1) * Double.parseDouble(op2);
+                    rf.setText(String.format("%f", ans));
+                    System.out.println(ans);
                 } else rf.setText("WRONG NUMBER FORMAT");
             }
         }
     }
 
     public static boolean isNumeric(String str) {
-        return str.matches("^-?\\d+(.\\d+)?\\n?$");  //match a number with optional '-' and decimal.
+//        System.out.println(str + " " + str.matches("^-?\\d+(\\.\\d+)?\\n?$"));
+        return str.matches("^-?\\d+(\\.\\d+)?\\n?$");  //match a number with optional '-' and decimal.
     }
 }

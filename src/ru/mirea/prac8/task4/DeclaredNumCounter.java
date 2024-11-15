@@ -23,6 +23,6 @@ public class DeclaredNumCounter {
         Scanner sc = new Scanner(System.in);
         int k = sc.nextInt();
         int s = sc.nextInt();
-        System.out.println(recursion(0, 0, 2, 4));
+        System.out.println(recursion(0, 0, k, s));
     }
 }

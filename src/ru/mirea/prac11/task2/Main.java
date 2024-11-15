@@ -15,14 +15,16 @@ public class Main {
         m = sc.nextInt();
         y = sc.nextInt();
         Calendar userCal = Calendar.getInstance();
-        userCal.set(y, m-1, d);
-        System.out.println("Дата введенная пользователем: " + sdf.format(userCal.getTime()));
+        userCal.set(d, m, y);
+        Date userDate = new Date();
+        userDate.setTime(userCal.getTimeInMillis());
+        System.out.println("Дата введенная пользователем: " + sdf.format(userDate.getTime()));
         Date curDate = new Date();
         System.out.println("Нынешняя дата: " + sdf.format(curDate.getTime()));
 
-        if (userCal.getTime().before(curDate)) {
+        if (userDate.before(curDate)) {
             System.out.println("Введенная дата раньше текущей.");
-        } else if (userCal.getTime().after(curDate)) {
+        } else if (userDate.after(curDate)) {
             System.out.println("Введенная дата позже текущей.");
         } else {
             System.out.println("Введенная дата совпадает с текущей.");
