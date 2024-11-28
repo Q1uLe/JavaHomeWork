@@ -1,4 +1,4 @@
-package ru.mirea.prac17.task10;
+package ru.mirea.prac17_lists.task10;
 
 public class ListSorter {
     static MyLinkedList<String> testList = new MyLinkedList<>();

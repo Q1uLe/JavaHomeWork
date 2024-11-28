@@ -1,4 +1,20 @@
 package ru.mirea.prac24.task2;
 
-public class ChairFactory {
+import ru.mirea.prac24.task2.Interfaces.AbstractChairFactory;
+
+public class ChairFactory implements AbstractChairFactory {
+    @Override
+    public VictorianChair createVictorianChair(int age) {
+        return new VictorianChair(age);
+    }
+
+    @Override
+    public MagicChair createMagiChair() {
+        return new MagicChair();
+    }
+
+    @Override
+    public FunctionalChair createFunctionalChair() {
+        return null;
+    }
 }

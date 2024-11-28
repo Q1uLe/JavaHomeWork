@@ -1,4 +1,4 @@
-package ru.mirea.prac17.task10;
+package ru.mirea.prac17_lists.task10;
 
 public class MyLinkedList<T extends Comparable<T>> {
     private Node<T> head;
