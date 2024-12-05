@@ -1,13 +1,10 @@
-package ru.mirea.prac17_lists.task10;
-
-//10.	Элемент односвязного списка содержит ссылку на строку.
-//Отсортировать список путем исключения максимального элемента и включения его в начало списка
+package ru.mirea.prac17_lists.task2_TwoLinked;
 
 public class Node<T extends Comparable<T>> {
     private T data;
-    private  Node<T> next;
+    private Node<T> prev = null;
+    private  Node<T> next = null;
     public Node(T dataValue){
-        this.next = null;
         this.data = dataValue;
     }
 
@@ -30,6 +27,14 @@ public class Node<T extends Comparable<T>> {
 
     public void setNext(Node<T> next) {
         this.next = next;
+    }
+
+    public Node<T> getPrev() {
+        return prev;
+    }
+
+    public void setPrev(Node<T> prev) {
+        this.prev = prev;
     }
 
     public int compareTo(Node<T> other){

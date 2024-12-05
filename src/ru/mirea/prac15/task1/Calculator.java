@@ -2,6 +2,8 @@ package ru.mirea.prac15.task1;
 
 import javax.swing.*;
 import java.awt.*;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 import java.util.Objects;
 
 public class Calculator {
@@ -48,18 +50,20 @@ public class Calculator {
     public static void calculate(Operators selectedOp){
         String op1 = tf1.getText();
         String op2 = tf2.getText();
+        DecimalFormat format = new DecimalFormat("#.####################");
+        format.setRoundingMode(RoundingMode.HALF_UP);
         switch (selectedOp){
             case PLUS -> {
                 if (isNumeric(op1) && isNumeric(op2)){
                     double ans = Double.parseDouble(op1) + Double.parseDouble(op2);
-                    rf.setText(String.format("%f", ans));
+                    rf.setText(format.format(ans));
                     System.out.println(ans);
                 } else rf.setText("WRONG NUMBER FORMAT");
             }
             case MINUS -> {
                 if (isNumeric(op1) && isNumeric(op2)){
                     double ans = Double.parseDouble(op1) - Double.parseDouble(op2);
-                    rf.setText(String.format("%f", ans));
+                    rf.setText(format.format(ans));
                     System.out.println(ans);
                 } else rf.setText("WRONG NUMBER FORMAT");
             }
@@ -67,7 +71,7 @@ public class Calculator {
                 if (isNumeric(op1) && isNumeric(op2)){
                     if (Double.parseDouble(op2) != 0){
                         double ans = Double.parseDouble(op1) / Double.parseDouble(op2);
-                        rf.setText(String.format("%f", ans));
+                        rf.setText(format.format(ans));
                         System.out.println(ans);
                     }
                     else rf.setText("DIVISION BY ZERO");
@@ -76,7 +80,7 @@ public class Calculator {
             case MULTIPLY -> {
                 if (isNumeric(op1) && isNumeric(op2)){
                     double ans = Double.parseDouble(op1) * Double.parseDouble(op2);
-                    rf.setText(String.format("%f", ans));
+                    rf.setText(format.format(ans));
                     System.out.println(ans);
                 } else rf.setText("WRONG NUMBER FORMAT");
             }

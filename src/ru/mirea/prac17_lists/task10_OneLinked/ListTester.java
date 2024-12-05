@@ -1,4 +1,4 @@
-package ru.mirea.prac17_lists.task10;
+package ru.mirea.prac17_lists.task10_OneLinked;
 
 public class ListTester {
 
