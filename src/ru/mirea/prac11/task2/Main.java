@@ -39,7 +39,7 @@ public class Main {
     }
 
     private static boolean checkDate(int d, int m, int y) {
-        if (d <= 0 || m <= 0 || y <= 0) {
+        if (d <= 0 || m <= 0 || y <= 0 || m > 12){
             return false;
         }
         if (m == 1) {
