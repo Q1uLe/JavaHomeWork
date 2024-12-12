@@ -1,4 +1,4 @@
-package ru.mirea.prac26.task2;
+package ru.mirea.prac26.task3;
 
 import org.jetbrains.annotations.NotNull;
 

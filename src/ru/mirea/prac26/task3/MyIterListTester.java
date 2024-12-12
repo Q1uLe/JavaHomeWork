@@ -1,4 +1,4 @@
-package ru.mirea.prac26.task2;
+package ru.mirea.prac26.task3;
 
 public class MyIterListTester {
     public static void main(String[] args) {
